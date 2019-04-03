@@ -5,21 +5,24 @@ prayut-bot
 <a target="_blank" href="http://nodejs.org/download/" title="Node version"><img src="https://img.shields.io/badge/node.js-%3E=_6.0-green.svg"></a>
 </p>
 
-prayut-bot for Before perfect Prayut discord
+prayut-bot สำหรับ Before perfect Prayut discord
 
 ## setup
 
-1. install [Node.js](https://nodejs.org/download/) first
+1. ลง [Node.js](https://nodejs.org/download/) ก่อนนะจ๊ะ เดี๋ยวrunไม่ได้
 
-2. Follow command below
+2. โหลดเป็นzip ไปแตกไฟล์
+
+3. cmd เข้าไปที่project
+
+4. ลง package
 
 ```
-$ git clone https://github.com/NatpakalJAM/Cherprang_BOT.git
-$ cd prayut-bot
 $ npm install
 ```
 
-3. add BOT_TOKEN on config.json
+5. แก้ config นิดหน่อยที่ไฟล์ `config.json`
+
 ```
 "TOKEN": "bot_token",
 "PrayutID": "ไอดีประยูทธ",
@@ -28,6 +31,7 @@ $ npm install
 ```
 
 ## start bot
+
 ```
 $ node prayut.js
 ```
