@@ -1,0 +1,27 @@
+{
+  "name": "prayut",
+  "version": "1.0.0",
+  "description": "prayut clone",
+  "main": "prayut.js",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node prayut.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatpakalJAM/prayut-bot.git"
+  },
+  "keywords": [
+    "prayut"
+  ],
+  "author": "JAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatpakalJAM/prayut-bot/issues"
+  },
+  "homepage": "https://github.com/NatpakalJAM/prayut-bot#readme"
+}
