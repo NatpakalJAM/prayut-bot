@@ -1,11 +1,7 @@
 # prayut-bot
-prayut-bot สำหรับแกล้ง ประยุทธ
+> Before perfect Prayut สำหรับแกล้ง ประยุทธ
 
-<p align=center>
 <a target="_blank" href="http://nodejs.org/download/" title="Node version"><img src="https://img.shields.io/badge/node.js-%3E=_6.0-green.svg"></a>
-</p>
-
-prayut-bot สำหรับ Before perfect Prayut discord
 
 ## setup
 
