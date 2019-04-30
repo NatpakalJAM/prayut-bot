@@ -20,7 +20,7 @@ botPrayut.on('message', message => {
     if (messageRecsive.match(/^!say /)) {
         message.delete();
         messageReply = messageRecsive.replace('!say ', '');
-        message.channel.send('@everyone ' + messageReply);
+        message.channel.send(messageReply);
     }
 });
 
