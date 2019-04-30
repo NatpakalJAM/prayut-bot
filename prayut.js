@@ -13,32 +13,16 @@ botPrayut.on('ready', () => {
 
 });
 
-/* UNUSER !! for test
 botPrayut.on('message', message => {
     if (message.author.bot == true) return; // ถ้าเป็นbot
-    if (message.author.id !== botConfig.PrayutID) return; // ถ้าไม่ใช่ประยุทธ
-    avatar = 'https://cdn.discordapp.com/avatars/' + message.author.id + '/' + message.author.avatar + '.jpg'
-    message.guild.channels.get(botConfig.ChannelID).send({
-        embed: {
-            author: {
-                name: message.author.username,
-                icon_url: avatar,
-            },
-            title: 'message ที่ประยุทธเปลี่ยนแปลงแก้ไข',
-            fields: [{
-                name: 'msg',
-                value: message.content
-            }],
-            // timestamp: new Date(),
-            timestamp: message.mentions._client.readyAt,
-            footer: {
-                // icon_url: avatar,
-                text: '@ ' + message.author.username + '#' + message.author.discriminator
-            }
-        }
-    });
+    var messageRecsive = message.content;
+    var messageReply = '';
+    if (messageRecsive.match(/^!say /)) {
+        message.delete();
+        messageReply = messageRecsive.replace('!say ', '');
+        message.channel.send('@everyone ' + messageReply);
+    }
 });
-*/
 
 botPrayut.on('messageUpdate', (oldMessage, newMessage) => {
     if (newMessage.author.bot == true) return; // ถ้าเป็นbot
