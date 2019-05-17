@@ -17,10 +17,21 @@ botPrayut.on('message', message => {
     if (message.author.bot == true) return; // ถ้าเป็นbot
     var messageRecsive = message.content;
     var messageReply = '';
+    var voice_channel = message.member.voiceChannel;
     if (messageRecsive.match(/^!say /)) {
         message.delete();
         messageReply = messageRecsive.replace('!say ', '');
         message.channel.send(messageReply);
+    }
+    if (messageRecsive.match(/มึงเข้ามาสิ/)) {
+        
+        if (!voice_channel) {
+            return message.reply("เข้าห้องไหนวะ");
+        }
+        voice_channel.join();
+    }
+    if (messageRecsive.match(/มึงออกไปเลย/) || messageRecsive.match(/ไปไหนก็ไป/)) {
+        voice_channel.leave();
     }
 });
 
